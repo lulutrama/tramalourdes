@@ -3,76 +3,99 @@
     <head>
         <meta charset="uft-8"/>
         <title>Trama Lourdes</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
-            <h1>Trama Lourdes</h1>
-            <img src="img/tramalourdes.jpg" width="150px" height="" alt="tramalourdes" title="Trama Lourdes"/>
-            <nav>
+            <nav class="botonera">
                 <ul>
-                    <li> <a href="#sobremi">Sobre mi</a></li>
-                    <li> <a href="https://www.behance.net/tramalourdes" target="_blank">Mis trabajos</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="https://www.behance.net/tramalourdes" target="_blank">PROYECTOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
+            <section class="contenedorfrase"> 
+                <p class="yosoylulu"> <span class="lulu">¡Hola!</span></p>
+                <p class="yosoylulu"> <span class="lulu">Yo </span><span class="lulu">soy </span><span class="lulu">Lulú.</span></p>
+            </section>
+            <h1>Lourdes Trama</h1>
         </header>
         <main>
-            <section>
-                <h3 id="sobremi">PERFIL PERSONAL</h3>
-                <p> ¡Hola! Me llamo Lourdes, pero todos me dicen Lulú. Tengo 20 años. Soy ilustradora y estudiante de Diseño Gráfico. <br> Soy una persona proactiva, creativa y social. Disfruto creando y divirtiendome.</p> 
-                <!-- Si necesitas hacer dos renglones, usa dos p distintas. No usamos br, fijate que lo usaste varias veces --> 
-                <article>
-                    <h5>Te invito a que conozcas más acerca de mi perfil profesional</h5>
-                        <a href="#estudios">MIS ESTUDIOS</a>
-                        <a href="#trabajo">EXPERIENCIA LABORAL</a>
-                        <a href="#competencias">COMPETENCIAS</a>
-                        <a href="#contacto">CONTACTO</a>
+            <section class="flex-container">
+                <article class="a-flex-item c">                
+                    <img class="sombraimg" src="img/tramalourdes.jpg" width="400px" height="" alt="tramalourdes" title="Trama Lourdes"/>
                 </article>
-                    </section>
-                    <section>
-                        <h4 id="estudios">HISTORIAL ACADÉMICO</h4>
-                        <p>Instituto Nuestra Señora del Carmen, Adrogué <br> Titulo: Bachiller de Ciencias Sociales <br> 2015 - 2020</p>
-                        <p>Universidad Nacional de Lanús <br> Licenciatura en Diseño y Comunicación Visual <br> 2021 - actualidad (52%) </p>
-                        <p>Universidad Nacional de Lomas de Zamora <br> Licenciatura en Publicidad <br> 2021 - actualidad (35%) </p>
-                    </section>
-                    <section>
-                        <h4 id="trabajo">EXPERIENCIA LABORAL</h4>
-                        <p>Factor Ranch <br> Administración <br> Atención al público <br> Ventas Online</p>
-                    </section>
-                    <section>
-                        <h4>IDIOMAS</h4>
-                        <p>Ingles intermedio <br> Instituto St Hellens School Of English</p>
-                    </section>
-                    <section>
-                        <h4>APTITUDES</h4>
-                        <ul>
-                            <li>Creatividad</li>
-                            <li>Adaptación</li>
-                            <li>Responsabilidad</li>
-                            <li>Resolutiva</li>
-                            <li>Habilidades comunicativas</li>
-                            <li>Trabajo en equipo</li>
-                        </ul>
-                    </section>
-            <aside> <!-- El aside suele usarse para información no relevante, que no importa si no está -->
-                <section>
-                    <h4 id="competencias">COMPETENCIAS</h4>
-                    <ul>
-                        <li> <img src="img/iconoai.png" width="30px" alt="AI"> Adobe Ilustrator </li>
-                        <li> <img src="img/iconopsd.png" width="30px" alt="PSD"> Adobe Photoshop</li>
-                        <li> <img src="img/iconoid.png" width="30px" alt="ID"> Adobe Indesign </li>
-                        <li> <img src="img/iconooffice.png" width="30px" alt="Office"> Paquete Office </li>
+                <article class="a-flex-item d">
+                    <h3 id="sobremi" class="sobremi">SOBRE MI</h3>
+                    <p>Diseñadora gráfica, ilustradora y publicista. Calificada para desarrollar y llevar a cabo todo tipo de proyectos creativos. Con conocimientos en los campos de diseño corporativo; editorial; y publicitario. Incluyendo el desarrollo de marca, identidad visual, branding, campaña de medios, manejo de redes sociales, entre otros.</p>
+                </article>
+            </section>
+            <section class="another-flex-container">
+                    <article class="flex-item a">
+                        <h4 class="subtitulos">HISTORIAL ACADÉMICO</h4>
+                            <p>Instituto Nuestra Señora del Carmen, Adrogué </p>
+                            <p class="tituloarticle">Titulo: Bachiller de Ciencias Sociales </p>
+                            <p class="fechas">2015 - 2020</p>
+                            <p>Universidad Nacional de Lanús </p>
+                            <p class="tituloarticle">Licenciatura en Diseño y Comunicación Visual </p>
+                            <p class="fechas">2021 - actualidad (52%) </p>
+                            <p>Universidad Nacional de Lomas de Zamora </p>
+                            <p class="tituloarticle">Licenciatura en Publicidad </p>
+                            <p class="fechas">2021 - actualidad (35%) </p>
+                    </article>
+                    <article class="flex-item b">
+                        <h4 class="subtitulos" id="trabajo">EXPERIENCIA LABORAL</h4>
+                        <p class="tituloarticle">DISEÑADORA GRÁFICA FREELANCE</p>
+                        <p>Desarrollo de proyectos de diseño corporativo, marca, identidad visual y branding.</p>
+                        <p class="fechas">2023-actualidad</p>
+                        <p class="tituloarticle">FACTOR RANCH, Piletas & Juegos de Jardín</p>
+                        <p>Atención al público y ventas en el negocio familiar, gestionando transacciones comerciales y contribuyendo en tareas administrativas.</p>
+                        <p class="fechas">(2019-2021)</p>
+                    </article>
+            </section>
+            <section  class="tres-flex-container">
+                <article class="tres-flex-item e">
+                    <h4 class="subtitulos" id="skills">COMPETENCIAS</h4>
+                    <ul class="centrarlogos">
+                        <li> <img src="img/iconoai.png" width="30px" height="30px" alt="icono Ai"> Adobe Ilustrator (Avanzado)</li>
+                        <li> <img src="img/iconopsd.png" width="30px" height="30px" alt="Icono PSD"> Adobe Photoshop (Avanzado)</li>
+                        <li> <img src="img/iconoid.png" width="30px" height="30px" alt="Icono ID"> Adobe Indesign (Avanzado)</li>
+                        <li> <img src="img/iconopr.png" width="30px" height="30px" alt="Icono PR"> Adobe Premiere (Intermedio)</li>
+                        <li> <img src="img/iconoae.png" width="30px" height="30px" alt="Icono AE"> Adobe AfterEffects (Básico)</li>
+                        <li> <img src="img/iconohtml.png" width="30px" height="30px" alt="Icono HTML"> HTML & CSS (Básico)</li>
+                        <li> <img src="img/iconooffice.png" width="30px" height="30px" alt="Icono Office"> Paquete Office (Intermedio)</li>
                     </ul>
+                </article>
+                <article class="tres-flex-item f">
+                    <h4 class="subtitulos" >APTITUDES</h4>
+                    <ul class="centrarlogos">
+                        <li>Creatividad</li>
+                        <li>Adaptación</li>
+                        <li>Responsabilidad</li>
+                        <li>Resolución de problemas</li>
+                        <li>Habilidades comunicativas</li>
+                        <li>Trabajo en equipo</li>
+                    </ul>
+                </article>
+                <article class="tres-flex-item g">
+                    <h4 class="subtitulos" >IDIOMAS</h4>
+                    <ul class="centrarlogos">
+                        <li>Español (Nativo)</li>
+                        <li>Ingles (Intermedio)</li>
+                    </ul>
+                </article>
+            </section>
+                <section class="contenedorcontacto">
+                    <h5 class="subtitulos" id="contacto">MEDIOS DE CONTACTO</h5>
+                        <ul class="contactolista">
+                            <li> <img src="img/logotelefono.svg" width="30px" height="30px" alt="iconotelefono"> <a href="https://wa.me/+5491170002178" target="_blank">54 1170002178 </a></li>
+                            <li> <img src="img/logomail.svg" width="30px" height="30px" alt="iconomail"> <a href="https://mailto:tramalourdes@gmail.com" target="_blank">tramalourdes@gmail.com </a></li>
+                            <li> <img src="img/logoinstagram.svg" width="30px" height="30px" alt="iconoig"> <a href="https://www.instagram.com/lourtrama/" target="_blank">lourtrama </a></li>
+                            <li> <img src="img/logobehance.svg" width="30px" height="30px" alt="iconobehance"> <a href="https://www.behance.net/tramalourdes" target="_blank">Lourdes Trama </a></li>
+                            <li> <img src="img/logoubicacion.svg" width="30px" height="30px" alt="iconoubicacion"> <a href="https://www.google.com/maps/place/Adrogu%C3%A9,+Provincia+de+Buenos+Aires/@-34.800716,-58.3918648,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcd340608e99d5:0xeb95ba406ecce5bf!8m2!3d-34.8012352!4d-58.3889046!16zL20vMGd4a2xj?entry=ttu" target="_blank">Almirante Brown, Adrogué</li>
+                        </ul> 
                 </section>
-                <section>
-                    <h4 id="contacto">MEDIOS DE CONTACTO</h4>
-                    <!-- Acá se te chifió ponerle una etiqueta que contenga los li -->
-                        <li> <img src="img/iconoubicacion.png" width="30px" alt="iconoubicacion"> <a href="https://www.google.com/maps/place/Adrogu%C3%A9,+Provincia+de+Buenos+Aires/@-34.800679,-58.4124644,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcd340608e99d5:0xeb95ba406ecce5bf!8m2!3d-34.8012352!4d-58.3889046!16zL20vMGd4a2xj?entry=ttu" target="_blank"> Almirante Brown, Adrogué</li>
-                        <li> <img src="img/iconotelefono.png" width="30px" alt="iconotelefono"> <a href="https://wa.me/+5491170002178" target="_blank"> +54 1170002178 </a></li>
-                        <li> <img src="img/iconomail.png" width="30px" alt="iconomail"> <a href="https://mailto:tramalourdes@gmail.com" target="_blank">tramalourdes@gmail.com </a></li>
-                        <li> <img src="img/iconoinstagram.png" width="30px" alt="iconoig"> <a href="https://www.instagram.com/lourtrama/" target="_blank"> @lourtrama </a></li>
-                        <li> <img src="img/iconobehance.png" width="30px" alt="iconobehance"> <a href="https://www.behance.net/tramalourdes" target="_blank"> Lourdes Trama </a></li> 
-                </section>
-            </aside>
         </main>
         <footer>
             <p>Curriculum Vitae para Computación III / Todos los derechos reservados</p>
