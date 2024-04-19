@@ -2,103 +2,154 @@
 <html>
     <head>
         <meta charset="uft-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trama Lourdes</title>
         <link href="estilos.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     </head>
     <body>
-        <header>
-            <nav class="botonera">
-                <ul>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="https://www.behance.net/tramalourdes" target="_blank">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+        <header class="header">
+            <input type="checkbox" class="header_checkbox" id="open-menu">
+            <label for="open-menu" class="header_open-nav-button" role="button">=</label>
+            <div class="header_logo-container">
+                <img class="header_logo" src="img/lululogo.svg">
+            </div>
+            <nav class="header_nav">
+                <ul class="header_nav-list">
+                    <li class="header_nav-item"><a href="#sobremi">SOBRE MI</a></li>
+                    <li class="header_nav-item"><a href="#skills">SKILLS</a></li>
+                    <li class="header_nav-item"><a href="https://www.behance.net/tramalourdes" target="_blank">PROYECTOS</a></li>
+                    <li class="header_nav-item"><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
-            <section class="contenedorfrase"> 
-                <p class="yosoylulu"> <span class="lulu">¡Hola!</span></p>
-                <p class="yosoylulu"> <span class="lulu">Yo </span><span class="lulu">soy </span><span class="lulu">Lulú.</span></p>
-            </section>
-            <h1>Lourdes Trama</h1>
         </header>
-        <main>
-            <section class="flex-container">
-                <article class="a-flex-item c">                
-                    <img class="sombraimg" src="img/tramalourdes.jpg" width="400px" height="" alt="tramalourdes" title="Trama Lourdes"/>
-                </article>
-                <article class="a-flex-item d">
-                    <h3 id="sobremi" class="sobremi">SOBRE MI</h3>
-                    <p>Diseñadora gráfica, ilustradora y publicista. Calificada para desarrollar y llevar a cabo todo tipo de proyectos creativos. Con conocimientos en los campos de diseño corporativo; editorial; y publicitario. Incluyendo el desarrollo de marca, identidad visual, branding, campaña de medios, manejo de redes sociales, entre otros.</p>
-                </article>
-            </section>
-            <section class="another-flex-container">
-                    <article class="flex-item a">
-                        <h4 class="subtitulos">HISTORIAL ACADÉMICO</h4>
-                            <p>Instituto Nuestra Señora del Carmen, Adrogué </p>
-                            <p class="tituloarticle">Titulo: Bachiller de Ciencias Sociales </p>
-                            <p class="fechas">2015 - 2020</p>
-                            <p>Universidad Nacional de Lanús </p>
-                            <p class="tituloarticle">Licenciatura en Diseño y Comunicación Visual </p>
-                            <p class="fechas">2021 - actualidad (52%) </p>
-                            <p>Universidad Nacional de Lomas de Zamora </p>
-                            <p class="tituloarticle">Licenciatura en Publicidad </p>
-                            <p class="fechas">2021 - actualidad (35%) </p>
+        <main>            
+            <div class="main_portada-container"> 
+                <p class="yosoylulu-a"> <span class="lulu">¡HOLA!</span></p>
+                <p class="yosoylulu-b"> <span class="lulu">Yo </span><span class="lulu">Soy </span><span class="lulu">Lulu.</span></p>
+            </div>
+            <div class="main_div-sobremi">
+                <h1 class="main_titulo">LOURDES TRAMA</h1>
+                <section id="sobremi" class="flex-container">
+                    <article class="a-flex-item c">                
+                        <img class="sombraimg" src="img/tramalourdes.JPG" width="400px" height="" alt="tramalourdes" title="Trama Lourdes"/>
                     </article>
-                    <article class="flex-item b">
-                        <h4 class="subtitulos" id="trabajo">EXPERIENCIA LABORAL</h4>
-                        <p class="tituloarticle">DISEÑADORA GRÁFICA FREELANCE</p>
-                        <p>Desarrollo de proyectos de diseño corporativo, marca, identidad visual y branding.</p>
-                        <p class="fechas">2023-actualidad</p>
-                        <p class="tituloarticle">FACTOR RANCH, Piletas & Juegos de Jardín</p>
-                        <p>Atención al público y ventas en el negocio familiar, gestionando transacciones comerciales y contribuyendo en tareas administrativas.</p>
-                        <p class="fechas">(2019-2021)</p>
+                    <article class="a-flex-item d">
+                        <h3 class="sobremi">SOBRE MI</h3>
+                        <p>Diseñadora gráfica, ilustradora y publicista. Calificada para desarrollar y llevar a cabo todo tipo de proyectos creativos. Con conocimientos en los campos de diseño corporativo; editorial; y publicitario. Incluyendo el desarrollo de marca, identidad visual, branding, campaña de medios, manejo de redes sociales, entre otros.</p>
                     </article>
-            </section>
-            <section  class="tres-flex-container">
-                <article class="tres-flex-item e">
-                    <h4 class="subtitulos" id="skills">COMPETENCIAS</h4>
-                    <ul class="centrarlogos">
-                        <li> <img src="img/iconoai.png" width="30px" height="30px" alt="icono Ai"> Adobe Ilustrator (Avanzado)</li>
-                        <li> <img src="img/iconopsd.png" width="30px" height="30px" alt="Icono PSD"> Adobe Photoshop (Avanzado)</li>
-                        <li> <img src="img/iconoid.png" width="30px" height="30px" alt="Icono ID"> Adobe Indesign (Avanzado)</li>
-                        <li> <img src="img/iconopr.png" width="30px" height="30px" alt="Icono PR"> Adobe Premiere (Intermedio)</li>
-                        <li> <img src="img/iconoae.png" width="30px" height="30px" alt="Icono AE"> Adobe AfterEffects (Básico)</li>
-                        <li> <img src="img/iconohtml.png" width="30px" height="30px" alt="Icono HTML"> HTML & CSS (Básico)</li>
-                        <li> <img src="img/iconooffice.png" width="30px" height="30px" alt="Icono Office"> Paquete Office (Intermedio)</li>
-                    </ul>
-                </article>
-                <article class="tres-flex-item f">
-                    <h4 class="subtitulos" >APTITUDES</h4>
-                    <ul class="centrarlogos">
-                        <li>Creatividad</li>
-                        <li>Adaptación</li>
-                        <li>Responsabilidad</li>
-                        <li>Resolución de problemas</li>
-                        <li>Habilidades comunicativas</li>
-                        <li>Trabajo en equipo</li>
-                    </ul>
-                </article>
-                <article class="tres-flex-item g">
-                    <h4 class="subtitulos" >IDIOMAS</h4>
-                    <ul class="centrarlogos">
-                        <li>Español (Nativo)</li>
-                        <li>Ingles (Intermedio)</li>
-                    </ul>
-                </article>
-            </section>
-                <section class="contenedorcontacto">
-                    <h5 class="subtitulos" id="contacto">MEDIOS DE CONTACTO</h5>
-                        <ul class="contactolista">
-                            <li> <img src="img/logotelefono.svg" width="30px" height="30px" alt="iconotelefono"> <a href="https://wa.me/+5491170002178" target="_blank">54 1170002178 </a></li>
-                            <li> <img src="img/logomail.svg" width="30px" height="30px" alt="iconomail"> <a href="https://mailto:tramalourdes@gmail.com" target="_blank">tramalourdes@gmail.com </a></li>
-                            <li> <img src="img/logoinstagram.svg" width="30px" height="30px" alt="iconoig"> <a href="https://www.instagram.com/lourtrama/" target="_blank">lourtrama </a></li>
-                            <li> <img src="img/logobehance.svg" width="30px" height="30px" alt="iconobehance"> <a href="https://www.behance.net/tramalourdes" target="_blank">Lourdes Trama </a></li>
-                            <li> <img src="img/logoubicacion.svg" width="30px" height="30px" alt="iconoubicacion"> <a href="https://www.google.com/maps/place/Adrogu%C3%A9,+Provincia+de+Buenos+Aires/@-34.800716,-58.3918648,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcd340608e99d5:0xeb95ba406ecce5bf!8m2!3d-34.8012352!4d-58.3889046!16zL20vMGd4a2xj?entry=ttu" target="_blank">Almirante Brown, Adrogué</li>
-                        </ul> 
                 </section>
+            </div>
+            <div class="fondocolores">
+                <section class="another-flex-container">
+                        <article class="flex-item a">
+                            <h4 class="subtitulos">HISTORIAL ACADÉMICO</h4>
+                                <ul class="list_main">
+                                    <li>
+                                        <p class="tituloarticle">Bachiller de Ciencias Sociales </p>
+                                            <p>Instituto Nuestra Señora del Carmen, Adrogué</p>
+                                            <p class="fechas">2015 - 2020</p>
+                                    </li>
+                                    <li>
+                                        <p class="tituloarticle">Licenciatura en Diseño y Comunicación Visual</p>
+                                            <p>Universidad Nacional de Lanús</p>
+                                            <p class="fechas">2021 - actualidad (52%)</p>                                        
+                                    </li>
+                                    <li>
+                                        <p class="tituloarticle">Licenciatura en Publicidad</p>
+                                            <p>Universidad Nacional de Lomas de Zamora</p>
+                                            <p class="fechas">2021 - actualidad (35%)</p>
+                                    </li>
+                                </ul>
+                        </article>
+                        <article class="flex-item b">
+                            <h4 class="subtitulos" id="trabajo">EXPERIENCIA LABORAL</h4>
+                                <ul class="list_main">
+                                    <li>
+                                        <p class="tituloarticle">DISEÑADORA GRÁFICA FREELANCE</p>
+                                        <p>Desarrollo de proyectos de diseño corporativo, marca, identidad visual y branding.</p>
+                                        <p class="fechas">2023-actualidad</p>
+                                    </li>
+                                    <li>
+                                        <p class="tituloarticle">FACTOR RANCH, Piletas & Juegos de Jardín</p>
+                                        <p>Atención al público y ventas en el negocio familiar, gestionando transacciones comerciales y contribuyendo en tareas administrativas.</p>
+                                        <p class="fechas">(2019-2021)</p>
+                                    </li>
+                                </ul>
+                        </article>
+                </section>
+                <section  class="tres-flex-container">
+                    <article id="skills" class="tres-flex-item e">
+                        <h4 class="subtitulos">COMPETENCIAS</h4>
+                        <ul class="centrarlogos">
+                            <li> 
+                                <img src="img/iconoai.png" width="30px" height="30px" alt="icono Ai"> Adobe Ilustrator (Avanzado)
+                            </li>
+                            <li> 
+                                <img src="img/iconopsd.png" width="30px" height="30px" alt="Icono PSD"> Adobe Photoshop (Avanzado)
+                            </li>
+                            <li> 
+                                <img src="img/iconoid.png" width="30px" height="30px" alt="Icono ID"> Adobe Indesign (Avanzado)
+                            </li>
+                            <li> 
+                                <img src="img/iconopr.png" width="30px" height="30px" alt="Icono PR"> Adobe Premiere (Intermedio)
+                            </li>
+                            <li> 
+                                <img src="img/iconoae.png" width="30px" height="30px" alt="Icono AE"> Adobe AfterEffects (Básico)
+                            </li>
+                            <li> 
+                                <img src="img/iconohtml.png" width="30px" height="30px" alt="Icono HTML"> HTML & CSS (Básico)
+                            </li>
+                            <li> 
+                                <img src="img/iconooffice.png" width="30px" height="30px" alt="Icono Office"> Paquete Office (Intermedio)
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="tres-flex-item f">
+                        <h4 class="subtitulos" >APTITUDES</h4>
+                            <ul class="centrarlogos">
+                                <li>Creatividad</li>
+                                <li>Adaptación</li>
+                                <li>Responsabilidad</li>
+                                <li>Resolución de problemas</li>
+                                <li>Habilidades comunicativas</li>
+                                <li>Trabajo en equipo</li>
+                            </ul>
+                    </article>
+                    <article class="tres-flex-item g">
+                        <h4 class="subtitulos" >IDIOMAS</h4>
+                            <ul class="centrarlogos">
+                                <li>Español (Nativo)</li>
+                                <li>Ingles (Intermedio)</li>
+                            </ul>
+                    </article>
+                </section>
+            </div>
         </main>
-        <footer>
-            <p>Curriculum Vitae para Computación III / Todos los derechos reservados</p>
+        <footer class="contenedorcontacto">
+            <div>
+                <h5 class="subtitulos" id="contacto">CONTACTO</h5>
+                    <ul class="contactolista">
+                        <li> 
+                            <img src="img/logotelefono.svg" width="30px" height="30px" alt="iconotelefono"> <a href="https://wa.me/+5491170002178" target="_blank">54 1170002178 </a>
+                        </li>
+                        <li> 
+                            <img src="img/logomail.svg" width="30px" height="30px" alt="iconomail"> <a href="https://mailto:tramalourdes@gmail.com" target="_blank">tramalourdes@gmail.com </a>
+                        </li>
+                        <li> 
+                            <img src="img/logoinstagram.svg" width="30px" height="30px" alt="iconoig"> <a href="https://www.instagram.com/lourtrama/" target="_blank">lourtrama </a>
+                        </li>
+                        <li> 
+                            <img src="img/logobehance.svg" width="30px" height="30px" alt="iconobehance"> <a href="https://www.behance.net/tramalourdes" target="_blank">Lourdes Trama </a>
+                        </li>
+                        <li> 
+                            <img src="img/logoubicacion.svg" width="30px" height="30px" alt="iconoubicacion"> <a href="https://www.google.com/maps/place/Adrogu%C3%A9,+Provincia+de+Buenos+Aires/@-34.800716,-58.3918648,14z/data=!3m1!4b1!4m6!3m5!1s0x95bcd340608e99d5:0xeb95ba406ecce5bf!8m2!3d-34.8012352!4d-58.3889046!16zL20vMGd4a2xj?entry=ttu" target="_blank">Almirante Brown, Adrogué</a>
+                        </li>
+                    </ul> 
+            </div>
+            <div class="div_linea">
+                <p class="footer_end">Curriculum Vitae para Computación III / Todos los derechos reservados</p>
+            </div>
         </footer>
     </body>
 </html>

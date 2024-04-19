@@ -7,100 +7,193 @@
 }
 
 body {
-    background-image: url(img/fondoweb.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: "Poppins";
+    cursor: url(img/cursor.svg), auto;
 }
 
-.botonera {
-    width: 100%;
-    height: 40px;
-    background-color: rgb(247, 247, 25);
-    padding-top: 20px;
-    text-align: right;
+
+
+/*-------------------SECCION HEADER--------------------*/
+
+.header {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    container-type: inline-size;
+    container-name: header;
 }
-nav ul {
+
+.header_open-nav-button {
+    color:black;
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+}
+
+.header_checkbox {
+    display: none;
+}
+
+.header_nav {
+    display: none;
+    background-color: yellow;
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    top: 0;
+    z-index: -1;
+    font-family: "BaumansRegular";
+}
+
+.header_nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.header_checkbox:checked ~ .header_nav {
+    display: flex;
+}
+
+.header_logo {
+    max-width: 100%;
+    width: 50px;
+    margin: 10px 20px;
+}
+
+.header_nav-item {
     list-style: none;
 }
 
-nav ul li {
-    display: inline;
-}
-
-.botonera a {
+.header_nav-item a {
+    color: black;
     text-decoration: none;
-    padding: 10px 60px;
-    font-size: 15px;
-    font-family: "Poppins";
-    color: rgb(0, 0, 0)
+    cursor: url(img/cursor.svg), auto;
 }
 
-nav a:hover {
-    font-size: 20px;
+.header_nav-item a:hover {
     color: rgb(255, 0, 55);
+    font-size: 18px;
+
 }
 
-.contenedorfrase {
+
+/*-------------------HEADER QUERIES--------------------*/
+
+
+@container header (min-width:600px) {
+    .header_nav {
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .header_nav-list {
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        gap: 50px;
+        margin-right: 40px;
+    }
+
+    .header_open-nav-button {
+        display: none;
+    }
+}
+
+/*-------------------FIN SECCION HEADER--------------------*/
+
+
+/*--------          -----------SECCION PERFIL---------       -----------*/
+
+
+/*-------------------PORTADA--------------------*/
+
+.main_portada-container {
     width: 100%;
-    height: 700px;
+    height: auto;
+    background-color: black;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "BebasNeue-Regular";
+    color: rgb(247, 247, 25);
+    font-size: 25vh;
+    padding-top: 34vh;
+    padding-bottom: 10vh;
+    cursor: url(img/cursorb.svg), auto;
 }
 
-.yosoylulu {
-    padding-top: 250px;
-    padding-left: 50px;
-    font-family: "BebasNeueRegular";
-    font-size: 250px;
-    color: rgb(255, 0, 55);
-    line-height: 0px;
+.yosoylulu-a, .yosoylulu-b {
+    padding-left: 30px;
+    line-height: 1;
 }
 
 .lulu:hover {
     color: white;
 }
 
-/*.contenedorseccionsobremi {
-    background-color: rgb(194, 93, 93);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 800px;
-}*/
+/*-------------------SOBRE MI--------------------*/
+
+
+.main_div-sobremi {
+    cursor: url(img/cursorb.svg), auto;
+    background-color: black;
+}
+
+.main_titulo {
+    color: rgb(247, 247, 25);
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    letter-spacing: 50px;
+    font-family: "BaumansRegular";
+}
+
+.main_titulo:hover{
+    color: rgb(255,0,55);
+}
+
+/*-------------------SOBRE MI--------------------*/
 
 
 .flex-container {
     width: 100%;
-    height: 700px; 
+    height: auto; 
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 20vh;
+    flex-wrap: wrap;
 }
 
 .a-flex-item {
-    margin: 0px;
-    color: black;
     padding: 30px;
 }
 
-.c {
-    height: 600px;
-    width: 500px;
-    line-height: 1.5;
-}
-
 .d {
-    height: 400px;
-    width: 300px;
+    height: auto;
+    width: 60vh;
     background-color: rgb(247, 247, 25);
     font-size: 18px;
     font-family: "Poppins";
     line-height: 1.5;
+    border-radius: 20px;
 }
 
 .sobremi {
     color: black;
     font-size: 20px;
-    font-family: "Poppins";
+    font-family: "BaumansRegular";
     letter-spacing: 6px;
     line-height: 70px;
 }
@@ -109,58 +202,49 @@ nav a:hover {
         box-shadow: 10px 10px 0px rgb(247, 247, 25);
 }
 
-/*.imglulu {
-    padding-left: 50px;
-}
+/*---------------------DATOS PERSONALES----------------------*/
 
-.parrafosobremi {
-    padding: 50px;
-
-}*/
-
-h1 {
-    color: rgb(247, 247, 25);
-    font-size: 20px;
-    padding: 50px;
-    text-align: center;
-    letter-spacing: 50px;
-    text-transform: uppercase;
-    font-family: "Poppins";
-}
-
-h1:hover{
-    color: rgb(255,0,55);
-    font-size: 20px;
+.fondocolores {
+    background-image: url(img/fondocolores.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .another-flex-container{
     width: 100%;
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: stretch;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-wrap: wrap;
 }
 
 .flex-item{
-    margin: 0px;
+    margin: 30px;
     padding: 20px;
     color: black;
     text-align: left;
-    width: 400px;
+    width: 300px;
+    background-color: #FFFFED;
+    border-radius: 20px;
 }
 
 .a {
-    height: 400px;
+    height: auto;
     font-size: 14px;
-    font-family: "Poppins";
     line-height: 1.5;
 }
 
 .b {
-    height: 400px;
+    height: auto;
     font-size: 14px;
-    font-family: "Poppins";
     line-height: 1.5;
+}
+
+.list_main {
+    list-style: none;
 }
 
 .tituloarticle {
@@ -173,41 +257,36 @@ h1:hover{
 
 .tres-flex-container{
     width: 100%;
-    height: 700px;
+    height: auto;
+    padding-bottom: 20vh;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 15vh;
 }
 
 .tres-flex-item{
-    margin: 0px;
-    padding: 30px;
+    margin: 30px;
+    padding: 20px;
     color: black;
     text-align: left;
-    width: 400px;
+    background-color: #FFFFED;
+    border-radius: 20px;
 }
 
 .e {
-    height: 400px;
-    width: 350px;
     font-size: 14px;
-    font-family: "Poppins";
     line-height: 2;
 }
 
 .f {
-    height: 400px;
-    width: 350px;
     font-size: 14px;
-    font-family: "Poppins";
     line-height: 2;
 }
 
 .g {
-    height: 400px;
-    width: 350px;
     font-size: 14px;
-    font-family: "Poppins";
     line-height: 2;
 }
 
@@ -238,16 +317,19 @@ h3 {
     color: rgb(247, 247, 25);
     letter-spacing: 6px;
     font-size: 22px;
-    font-family: "Poppins";
-    line-height: 70px;
+    font-family: "BaumansRegular";
 }
+
+/*-------------------FOOTER--------------------*/
 
 .contenedorcontacto {
     background-color: black;
     width: 100%;
-    height: 200px;
+    height: auto;
     padding-top: 20px;
     text-align: center;
+    cursor: url(img/cursorb.svg), auto;
+    font-family: "BaumansRegular";
 }
 
 .contactolista {
@@ -261,7 +343,6 @@ h3 {
     display: inline-block;
     margin-right: 50px;
     font-size: 18px;
-    font-family: "Poppins";
 }
 
 .contactolista li img {
@@ -275,6 +356,7 @@ h3 {
     vertical-align: middle;
     text-decoration: none;
     color: white;
+    cursor: url(img/cursorb.svg), auto;
 }
 
 .contactolista a:hover {
@@ -283,61 +365,56 @@ h3 {
 }
 
 footer {
-    background-color: white;
     padding-top: 25px;
     width: 100%;
     height: 50px;
     display: inline-block;
     font-size: 12px;
     text-align: center;
-    font-family: "Poppins";
-    color: black;
 }
 
 footer a {
     text-decoration: none;
-    color: black;
 }
 
-@font-face {
-    font-family: "FiraSans";
-    src: url("fonts/fira/FiraSans-Regular.ttf") format(truetype);
-    font-weight: normal;
-    font-style: normal;
+.div_linea {
+    display: flex;
+    border-top: 1px solid white;
+    line-height: 5;
+    width: auto;
+    justify-content: center;
+    
 }
 
-@font-face {
-    font-family: "Poppins";
-    src: url("fonts/poppins/Poppins-Regular.ttf") format(truetype);
-    font-weight: normal;
-    font-style: normal;
+.footer_end {
+    color: white;
 }
 
-@font-face {
-    font-family: "Poppins";
-    src: url("fonts/poppins/Poppins-Regular.ttf") format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
+
+/*-------------------FOOTER--------------------*/
+
+
+/*-------------------FUENTES--------------------*/
 
 @font-face {
-    font-family: "BebasNeueRegular";
+    font-family: "BebasNeue-Regular";
     src: url("fonts/BebasNeue-Regular.ttf") format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
-
-/*@font-face {
-    font-family: "Fresca-Regular";
-    src: url("fonts/Fresca-Regular.ttf") format(truetype);
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.ttf") format(truetype);
     font-weight: normal;
     font-style: normal;
-}*/
+}
 
-/*@font-face {
-    font-family: "WaitingfortheSunrise-Regular";
-    src: url("fonts/WaitingfortheSunrise-Regular.ttf") format(truetype);
+@font-face {
+    font-family: "BaumansRegular";
+    src: url("fonts/Baumans-Regular.ttf") format(truetype);
     font-weight: normal;
     font-style: normal;
-}*/
+}
+
+/*-------------------FUENTES--------------------*/
