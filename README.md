@@ -5,27 +5,27 @@ Para comenzar a realizar la diagramación de la página web de mi curriculum uti
 
 El tamaño de resolución de mi pantalla de trabajo es de 1366 x 768. 
 
-###.HTML
+##HTML
 
-La estructura comienza con la etiqueta <html>, que cumple la función de ser un “Elemento raíz”, esta etiqueta representa el inicio del documento HTML, y el resto de las etiquetas son descendientes de la misma.
+La estructura comienza con la etiqueta html, que cumple la función de ser un “Elemento raíz”, esta etiqueta representa el inicio del documento HTML, y el resto de las etiquetas son descendientes de la misma.
 
 Las etiquetas estructurales que utilice son: 
 
-<head> Etiqueta de metadatos acerca del documento, encontramos el idioma, el nombre, título, enlaces a la hoja de estilos, y el favicon de la página. 
+Head, Etiqueta de metadatos acerca del documento, encontramos el idioma, el nombre, título, enlaces a la hoja de estilos, y el favicon de la página. 
 
-<body> Muestra todo el contenido visible en el navegador. En ella encontramos a su vez el resto de etiquetas estructurales. 
+Body, Muestra todo el contenido visible en el navegador. En ella encontramos a su vez el resto de etiquetas estructurales. 
 
-<header> En ella encontramos la barra de navegación de la web, con el logo de la misma, con botones enlazados con sus respectivas secciones o enlaces externos, y a su vez también cuenta con su adaptación para móviles. 
+Header, En ella encontramos la barra de navegación de la web, con el logo de la misma, con botones enlazados con sus respectivas secciones o enlaces externos, y a su vez también cuenta con su adaptación para móviles. 
 
-<main> Esta etiqueta está subdividida por 3 <div> que a su vez se dividen en <section> y <article> según lo amerite el contenido del mismo. En él encontramos desde la presentación o portada de la página web, hasta todos los datos acerca de mi formación académica, experiencia laboral, competencias, etc.
+Main, Esta etiqueta está subdividida por 3 div que a su vez se dividen en section y article según lo amerite el contenido del mismo. En él encontramos desde la presentación o portada de la página web, hasta todos los datos acerca de mi formación académica, experiencia laboral, competencias, etc.
 
-<footer> Contiene dos apartados <div>, uno para contener todos los medios de contacto y otro que contiene los derechos de autor.
+Footer Contiene dos apartados div, uno para contener todos los medios de contacto y otro que contiene los derechos de autor.
 
-A su vez, en toda la diagramación de la página, utilicé diferentes etiquetas semánticas que me permitieron jerarquizar, nomenclar y distribuir los datos adecuadamente dependiendo el tipo de información del mismo. Entre ellas se encuentran etiquetas de secciones como <section>, <article>, <h1>, <h2>, <h3>, <h4>, <h5>, de agrupación de contenido como <p>, <ul>, <li>, <div>, etiquetas de contenido incrustado como <img>, etiquetas de formularios como <form>, <label>, <input>, también utilice atributos como “href”, “id” “type”, entre otros. Incluyendo también “class”, atributo que me permite asignar una o más clases a un elemento HTML. Para identificar y aplicar estilos CSS específicos a uno o varios elementos en mi página web. 
+A su vez, en toda la diagramación de la página, utilicé diferentes etiquetas semánticas que me permitieron jerarquizar, nomenclar y distribuir los datos adecuadamente dependiendo el tipo de información del mismo. Entre ellas se encuentran etiquetas de secciones como section, article, h1, h2, h3, h4, h5, de agrupación de contenido como p, ul, li, div, etiquetas de contenido incrustado como img, etiquetas de formularios como form, label, input, también utilice atributos como “href”, “id” “type”, entre otros. Incluyendo también “class”, atributo que me permite asignar una o más clases a un elemento HTML. Para identificar y aplicar estilos CSS específicos a uno o varios elementos en mi página web. 
 
 Las imagenes estan utilizadas en formato .svg y .png no perder calidad y que ocupen el menor espacio posible, salvo mi imagen personal que es en formato .jpg
 
-###.CSS
+##CSS
 
 Para la realización de mi Curriculum, busqué inspiración en el modernismo y un diseño al estilo Bauhaus, con la utilización de colores brillantes, figuras geométricas y tipografías sans serif, palo seco y geométricas. 
 
@@ -43,6 +43,6 @@ Las tipografías que utilicé en mi página web son todas de uso libre y gratuit
 
 En cuanto al fondo, no logre realizarlo de la manera en la que a mi me hubiese gustado, la única forma en la que pude conseguir que se asemeje al resultado deseado fue utilizando un background-image, en las secciones donde quiera que haya fondo, y background-color: black para donde no. 
 
-###Aclaración personal
+##Aclaración personal
 
 Para concluir me gustaría destacar que fue un trabajo muy interesante y entretenido para llevar a cabo, fue mi primera aproximación a HTML y CSS. Varias veces me quedé estancada con propiedades que se contradecían entre sí o que no hacían lo que yo quería, me demandó mucha investigación, basada en parte por la prueba y error. Sin embargo estoy contenta con el resultado, a pesar de que se puede seguir trabajando para lograr un mejor resultado. 
