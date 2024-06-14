@@ -31,7 +31,7 @@ width: 100%;
 
 .header_open-nav-button {
 color: #FFF;
-font-size: 1rem;
+font-size: 3rem;
 font-weight: 600;
 position: absolute;
 right: 10px;
@@ -45,8 +45,8 @@ display: none;
 display: none;
 background-color: transparent;
 position: absolute;
-height: 100vh;
-width: 100vh;
+height: auto;
+width: 20vh;
 top: 0;
 z-index: -1;
 }
@@ -55,10 +55,17 @@ z-index: -1;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
+gap: 2rem;
 }
 
 .header_checkbox:checked ~ .header_nav {
 display: flex;
+padding: 8rem;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: flex-end;
 }
 
 .header_logo {
@@ -104,7 +111,7 @@ border-radius: 2rem;
 /*-------------------HEADER QUERIES--------------------*/
 
 
-@container header (min-width:1200px) {
+@container header (min-width:600px) {
     .header_nav {
         display: block;
         position: static;
@@ -124,6 +131,8 @@ border-radius: 2rem;
     .header_open-nav-button {
         display: none;
     }
+
+
 }
 
 /*-------------------FIN SECCION HEADER--------------------*/
@@ -147,7 +156,7 @@ border-radius: 2rem;
 .hero_container {
 display: flex;
 width: 100%;
-height: 40rem;
+height: 100vh;
 padding-top: 7rem;
 flex-direction: column;
 justify-content: center;
@@ -204,7 +213,7 @@ font-size: 2rem;
 .hero_container_sobremi {
 display: flex;
 width: 100%;
-height: 40rem;
+height: 100vh;
 padding-top: 6rem;
 flex-direction: column;
 justify-content: center;
@@ -376,7 +385,7 @@ display: flex;
 width: 20rem;
 align-items: flex-start;
 align-content: flex-start;
-gap: 1.25rem 1.125rem;
+gap: 1rem 1rem;
 }
 
 .listas_competencias li {
@@ -400,7 +409,7 @@ gap: 5rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 1.125rem;
+gap: 1rem;
 }
 
 .titulo_servicios {
@@ -435,7 +444,7 @@ gap: 8rem;
 .hero_container_contactos {
 display: flex;
 width: 100%;
-height: 40rem;
+height: 100vh;
 padding-top: 7rem;
 flex-direction: column;
 justify-content: center;
@@ -483,7 +492,7 @@ width: 100%;
 padding: 9rem 0rem;
 justify-content: center;
 align-items: center;
-gap: 8rem;
+gap: 4rem;
 }
 
 
@@ -547,7 +556,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 5rem;
+gap: 3rem;
 }
 
 .container_rellenar {
@@ -570,7 +579,6 @@ flex-wrap: wrap;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 1rem;
 }
 
 .selecciona {
@@ -586,17 +594,19 @@ display: flex;
 gap: 0.8rem;
 }
 
-.columnaescribinos {
+.columna_escribinos {
 display: flex;
-padding: 15px 365px 165px 30px;border-radius: 30px;
+padding: 1rem;
+width: 42rem;
+height: 12rem;
+border-radius: 30px;
 background-color: #2C5746;
 align-items: center;
 color: #E3D8C2;
 box-sizing: border-box;
-width: 100%;
 }
 
-.tituloformularios {
+.titulo_formularios {
 color: #484848;
 text-align: center;
 font-family: Krub;
@@ -613,6 +623,7 @@ font-size: 1rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+padding-bottom: 1rem;
 }
 
 .estilo_input {
@@ -694,7 +705,7 @@ outline: none;
 .hero_container_galeria {
 display: flex;
 width: 100%;
-height: 40rem;
+height: 100vh;
 padding-top: 7rem;
 flex-direction: column;
 justify-content: center;
@@ -718,6 +729,173 @@ line-height: normal;
 width: 32rem;
 }
 
+.descripcion_pinturas {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-left: 3rem;
+padding-bottom: 3rem;
+}
+
+.descripcion_pinturas_izq {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+padding-right: 3rem;
+padding-bottom: 3rem;
+}
+
+.nombre_pintura {
+color:#2C5746;
+font-family: amarante;
+font-size: 2rem;
+}
+
+.tecnica {
+color:#2C5746;
+font-size: 1.5;
+font-weight: bold;
+}
+
+.texto_pinturas {
+padding-top: 3rem;
+color:#2C5746;
+font-size: 0.8rem;
+width: 30rem;
+}
+
+.texto_pinturas_izq {
+padding-top: 3rem;
+color:#2C5746;
+font-size: 0.8rem;
+width: 30rem;
+text-align: right;
+}
+
+.container_img_pinturas {
+display: flex;
+}
+
+.container_img_pinturas_izq {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.img_pinturas {
+width: 50%;
+height: auto;
+}
+/*-----------------------------------------PAGINA DE PROYECTOS-------------------------------------*/
+
+.hero_container_proyectos {
+display: flex;
+width: 100%;
+height: 100vh;
+padding-top: 7rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+background-image: url(img/background/heroproyectos.jpg);
+background-size: cover; 
+background-position: center;
+background-repeat: no-repeat;
+z-index: -1;
+}
+
+.titulo_hero_proyectos {
+font-family: amarante;
+color: #FFF;
+text-align: center;
+font-size: 3rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 32rem;
+}
+
+.container_galeria_proyectos {
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.container_galeria_proyectos img:hover{
+transform: scale(1.05);
+}
+
+/*----------------------------------------IMAGENES PROYECTOS-------------------------------------*/
+
+.container_img_proyecto {
+display: flex;
+flex-direction: column;
+}
+
+.img_proyecto {
+width: 100%;
+height: auto;
+}
+
+
+/*-----------------------------------------HTML GALERIAS DE PROYECTOS-------------------------------------*/
+
+.container_flecha_atras{
+background-color: #1E3F32;
+width: 100%;
+}
+
+.flecha_atras {
+padding-top: 1.5rem;
+padding-left: 1.5rem;
+}
+
+/*-----------------------------------------CINTURON VERDE OSCURO-------------------------------------*/
+.cinturon {
+display: flex;
+width: auto;
+padding: 3rem 0rem;
+justify-content: center;
+align-items: center;
+background-color: #1E3F32;
+flex-direction: column;
+gap: 2rem;
+}
+
+.titulo_cinturon {
+color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+}
+
+.subtitulo_cinturon {
+text-align: center;
+font-size: 1.5rem;
+color: #FFF;
+display: flex;
+padding: 0.6rem 1.8rem;
+justify-content: center;
+align-items: center;
+border-radius: 3rem;
+border: 1px solid #FFF;
+}
+
+.texto_cinturon {
+width: 60vh;
+color: #D9D9D9;
+text-align: center;
+font-size: 1rem;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+}
 /*-----------------------------------------PAGINA DE EVENTOS-------------------------------------*/
 
 .hero_container_eventos {
@@ -746,6 +924,7 @@ z-index: -1;
 
 .titulo_hero_eventos {
 position: relative;
+align-items: center;
 z-index: 1;
 font-family: amarante;
 color: #FFF;
@@ -755,6 +934,65 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 width: 32rem;
+}
+
+.container_eventos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.article_eventos_a, .article_eventos_b, .article_eventos_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.article_eventos_a:hover {
+    filter: brightness(50%);
+}
+.article_eventos_a:hover .titulo_eventos {
+    opacity: 1;
+}
+
+.article_eventos_b:hover {
+    filter: brightness(50%);
+}
+.article_eventos_b:hover .titulo_eventos {
+    opacity: 1;
+}
+
+.article_eventos_c:hover {
+    filter: brightness(50%);
+}
+.article_eventos_c:hover .titulo_eventos {
+    opacity: 1;
+}
+
+.titulo_eventos {
+    position: absolute;
+    font-family: amarante;
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+.article_eventos_a {
+    background-image: url(img/eventos_a.jpeg);
+}
+.article_eventos_b {
+    background-image: url(img/eventos_b.jpg);
+}
+.article_eventos_c {
+    background-image: url(img/eventos_c.jpg);
 }
 
 /*-----------------------------------------FOOTER-------------------------------------*/
@@ -775,6 +1013,9 @@ justify-content: center;
 align-items: center;
 background: #2C5746;
 }
+
+
+
 
 /*-------------------NAV BOTONES FOOTER--------------------*/
 
@@ -900,15 +1141,19 @@ border-radius: 2rem;
 display: flex;
 width: 25rem;
 height: 12rem;
-flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 3.125rem;
+}
+
+.derecha_contactos {
+display: flex;
+flex-direction: column;
+gap: 2rem; 
 }
 
 .container_iconos_redes {
 display: flex;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 gap: 1rem;
 }
