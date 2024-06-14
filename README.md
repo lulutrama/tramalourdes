@@ -31,6 +31,7 @@ Las tipografías que utilicé en mi página web son todas de uso libre y gratuit
 
 El tamaño de resolución de mi pantalla de trabajo es de 1366 x 768. 
 Todavía no pude familiarizarme por completo con el formato responsive, es por eso que no aparece prácticamente en el desarrollo de mi página web
+Lo empece a usar para hacer mi nav, como lo habia usado en mi tp1, con un menuhamburguesa, pero en este trabajo por cuestion de tiempo no pude seguir ajustandolo. 
 Las imagenes de las paginas "galeria" y "eventos" no estan ajustadas al tamaño real
 
 ###Aclaración personal
