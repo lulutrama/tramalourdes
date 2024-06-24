@@ -273,8 +273,7 @@ transform: translateY(0);
     .deslizar {
         display: inline-block;
         animation: bounce 2s infinite;
-        font-size: 2rem; /* Ajusta el tamaño según sea necesario */
-        color: #000; /* Color de la flecha */
+        font-size: 2rem;
         margin: 20px;
     }
 
@@ -507,7 +506,7 @@ gap: 8rem;
     }
 
     .texto_servicios {
-        width: 70vh;
+        width: auto;
         height: auto;
     }
 }
@@ -1422,7 +1421,7 @@ line-height: normal;
     }
 
     .botones_footer li {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .interlineado_botones_footer ul {
@@ -1430,7 +1429,7 @@ line-height: normal;
         flex-direction: row;
         width: 100%;
         margin: 0%;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .container_trabajemosjuntos {
