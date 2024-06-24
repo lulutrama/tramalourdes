@@ -1446,13 +1446,13 @@ line-height: normal;
     }
     .derecha_contactos {
         flex-direction: row;
-        gap: 12rem;
+        gap: 15vh;
         align-items: flex-start;
         width: 100%;
     }
 
     .container_derechosdeautor {
-        gap: 12rem;
+        gap: 12vh;
     }
 }
 
