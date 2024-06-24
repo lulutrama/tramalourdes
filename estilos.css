@@ -185,7 +185,7 @@ gap: 0.5rem;
 .titulo_hero {
 color: #FFF;
 text-align: center;
-font-family: Amarante;
+font-family: "Amarante-Regular";
 font-size: 5rem;
 font-style: normal;
 font-weight: 400;
@@ -195,7 +195,7 @@ line-height: normal;
 .subtitulo_hero {
 color: #FFF;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1.5rem;
 }
 
@@ -209,7 +209,7 @@ align-items: center;
 .portfolio2024 {
 color: #FFF;
 text-align: center;
-font-family: Amarante;
+font-family: "Amarante-Regular";
 font-size: 2rem;
 }
 
@@ -243,7 +243,7 @@ padding-right: 25rem;
 .subtitulo_hero_sobremi {
 color: #FFF;
 text-align: left;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1rem;
 width: 25rem;
 }
@@ -296,7 +296,7 @@ color: #484848;
 .bsas {
 color: #484848;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -306,7 +306,7 @@ line-height: normal;
 .lourdestrama {
 color: #D9D9D9;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1rem;
 font-style: normal;
 font-weight: 600;
@@ -321,7 +321,7 @@ border-radius: 3rem;
 
 .cumpleaños {
 text-align: center;
-font-family: Amarante;
+font-family: "Amarante-Regular";
 font-size: 0.8rem;
 font-style: normal;
 font-weight: 400;
@@ -342,7 +342,7 @@ width: 40rem;
 }
 
 .titulo_texto_sobremi {
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1.2rem;
 font-style: italic;
 font-weight: 500;
@@ -350,7 +350,7 @@ line-height: normal;
 }
 
 .contenido_texto_sobremi {
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -553,7 +553,7 @@ width: 32rem;
 .subtitulo_hero_contactos {
 color: #FFF;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1.5rem;
 width: 32rem;
 }
@@ -603,7 +603,7 @@ list-style: none;
 
 .lista_contactos_formularios {
 color: #FFF;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 0.8rem;
 font-style: normal;
 font-weight: 500;
@@ -703,7 +703,7 @@ box-sizing: border-box;
 .titulo_formularios {
 color: #484848;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
@@ -712,7 +712,7 @@ line-height: normal;
 
 .subtitulos_formularios {
 color: #484848;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 1rem;
 font-style: normal;
 font-weight: 600;
@@ -773,7 +773,7 @@ outline: none;
 
 
 .boton_enviar_formulario {
-    font-family: krub;
+    font-family: "Krub-Regular";
     color: #2C5746;
     text-align: center;
     font-size: 1em;
@@ -813,7 +813,7 @@ z-index: -1;
 }
 
 .titulo_hero_galeria {
-font-family: amarante;
+font-family: "Amarante-Regular";
 color: #FFF;
 text-align: center;
 font-size: 3rem;
@@ -842,7 +842,7 @@ padding-bottom: 3rem;
 
 .nombre_pintura {
 color:#2C5746;
-font-family: amarante;
+font-family: "Amarante-Regular";
 font-size: 2rem;
 }
 
@@ -936,7 +936,7 @@ z-index: -1;
 }
 
 .titulo_hero_proyectos {
-font-family: amarante;
+font-family: "Amarante-Regular";
 color: #FFF;
 text-align: center;
 font-size: 3rem;
@@ -1057,7 +1057,7 @@ z-index: -1;
 position: relative;
 align-items: center;
 z-index: 1;
-font-family: amarante;
+font-family: "Amarante-Regular";
 color: #FFF;
 text-align: center;
 font-size: 3rem;
@@ -1109,7 +1109,7 @@ width: 32rem;
 
 .titulo_eventos {
     position: absolute;
-    font-family: amarante;
+    font-family: "Amarante-Regular";
     color: white;
     font-size: 3rem;
     opacity: 0;
@@ -1251,7 +1251,7 @@ color: #FFF;
 .trabajemosjuntos {
 color: #FFF;
 text-align: center;
-font-family: Amarante;
+font-family: "Amarante-Regular";
 font-size: 1.2rem;
 font-style: normal;
 font-weight: 400;
@@ -1335,7 +1335,7 @@ list-style: none;
 
 .lista_contactos {
 color: #FFF;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 0.8rem;
 font-style: normal;
 font-weight: 500;
@@ -1351,7 +1351,7 @@ list-style: none;
 
 .lista_contactos_italica {
 color: #FFF;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 0.8rem;
 font-style: italic;
 font-weight: 400;
@@ -1374,7 +1374,7 @@ background: #1E3F32;
 .texto_derechos {
 color: #FFF;
 text-align: center;
-font-family: Krub;
+font-family: "Krub-Regular";
 font-size: 0.6rem;
 font-style: normal;
 font-weight: 400;
