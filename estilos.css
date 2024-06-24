@@ -43,10 +43,13 @@ display: none;
 
 .header_nav {
 display: none;
-background-color: transparent;
+background-color: #1E3F32;
 position: absolute;
-height: auto;
-width: 20vh;
+height: 100vh;
+width: 100vw;
+justify-content: center; /* Centrar contenido horizontalmente */
+align-items: center; /* Centrar contenido verticalmente */
+
 top: 0;
 z-index: -1;
 }
@@ -63,7 +66,7 @@ gap: 2rem;
 display: flex;
 align-items: center;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: center;
 }
 
 .header_logo {
@@ -112,6 +115,7 @@ border-radius: 2rem;
 @media (min-width:610px) {
     .header {
         height: auto;
+        background-color: #1E3F32;
     }
     .header_nav {
         display: block;
@@ -146,6 +150,7 @@ border-radius: 2rem;
 
 
 }
+
 
 /*-------------------FIN SECCION HEADER--------------------*/
 
