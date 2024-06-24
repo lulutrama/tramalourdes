@@ -61,8 +61,6 @@ gap: 2rem;
 
 .header_checkbox:checked ~ .header_nav {
 display: flex;
-padding: 8rem;
-display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: flex-end;
@@ -111,7 +109,7 @@ border-radius: 2rem;
 /*-------------------HEADER QUERIES--------------------*/
 
 
-@container header (min-width:600px) {
+@container header (min-width:610px) {
     .header_nav {
         display: block;
         position: static;
@@ -130,6 +128,13 @@ border-radius: 2rem;
 
     .header_open-nav-button {
         display: none;
+    }
+
+    .header_checkbox:checked {
+        display: flex;
+        align-items: center;
+        background-color: none;
+        ;
     }
 
 
@@ -244,7 +249,7 @@ width: 25rem;
 }
 
 
-/*------------------ BOTON DESLIZAR--------------------*/
+/*--------------------------------------------BOTON DESLIZAR-------------------------------------------------------------------*/
 
 .gap_deslizar {
 padding-top: 2rem;
@@ -254,6 +259,24 @@ padding-top: 2rem;
 width: 40px;
 
 }
+
+@keyframes bounce {
+    0%, 100% {
+transform: translateY(0);
+    }
+
+    50% {
+    transform: translateY(20px);
+    }
+}
+
+    .deslizar {
+        display: inline-block;
+        animation: bounce 2s infinite;
+        font-size: 2rem; /* Ajusta el tamaño según sea necesario */
+        color: #000; /* Color de la flecha */
+        margin: 20px;
+    }
 
 /*-------------------SOBRE MI--------------------*/
 
@@ -439,6 +462,58 @@ align-items: center;
 gap: 8rem;
 }
 
+
+/*-----------------------------------------MEDIA PAGINA SOBREMI-------------------------------------*/
+
+
+@media (max-width: 600px) {
+
+    .gap_pagina_sobremi {
+        gap: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .titulo_container_hero {
+        padding-right: 20vh;
+    }
+    .datospersonales {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .texto_sobremi {
+        width: auto;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .container_historialacademico {
+        flex-direction: column;
+    }
+
+    .container_competencias {
+        flex-direction: column;
+    }
+
+    .container_servicios {
+        flex-direction: column;
+        gap: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        align-items: center;
+
+    }
+
+    .texto_servicios {
+        width: 70vh;
+        height: auto;
+    }
+}
+
+/*-----------------------------------------MEDIA PAGINA SOBREMI-------------------------------------*/
+
 /*-----------------------------------------PAGINA DE CONTACTOS-------------------------------------*/
 
 .hero_container_contactos {
@@ -580,6 +655,25 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 }
+
+
+
+
+
+.suscribite {
+    padding: 17px 600px 17px 30px;
+    border-radius: 100px;
+    background-color: #02776D;
+    color: #E3D8C2;
+    border: none;
+    outline: none
+}
+
+
+
+
+
+
 
 .selecciona {
 display: flex;
@@ -786,6 +880,43 @@ flex-direction: row-reverse;
 width: 50%;
 height: auto;
 }
+
+/*----------------------------------------RESPONSIVE GALERIA OBRAS-------------------------------------*/
+
+
+@media (max-width: 600px) {
+    .container_img_pinturas, .container_img_pinturas_izq {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 8rem;
+    }
+
+    .descripcion_pinturas {
+        padding: 2rem;
+    }
+
+    .descripcion_pinturas_izq {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .texto_pinturas_izq, .texto_pinturas {
+        text-align: start;
+        width: 70vh;
+    }
+
+    .img_pinturas {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*----------------------------------------RESPONSIVE GALERIA OBRAS-------------------------------------*/
+
 /*-----------------------------------------PAGINA DE PROYECTOS-------------------------------------*/
 
 .hero_container_proyectos {
@@ -994,6 +1125,41 @@ width: 32rem;
 .article_eventos_c {
     background-image: url(img/eventos_c.jpg);
 }
+
+/*-----------------------------RESPONSIVE EVENTOS-----------------*/
+
+@media (max-width: 600px) {
+
+    
+
+    .container_formulario {
+        flex-direction: column;
+        padding: 5rem 0rem;
+    }
+    
+
+    .container_completatusdatos {
+        padding: 2rem;
+        width: auto;
+    }
+
+    .rellenar {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .columna_escribinos {
+        width: 60vh;
+    }
+
+    .gap_eventos{ 
+        padding-bottom: 5rem;
+    }
+
+}
+
+/*-----------------------------RESPONSIVE EVENTOS-----------------*/
+
 
 /*-----------------------------------------FOOTER-------------------------------------*/
 
@@ -1216,23 +1382,95 @@ line-height: normal;
 }
 
 
-
 /*-----------------------------------------FOOTER-------------------------------------*/
 
+/*-----------------------------------------MEDIA FOOTER-------------------------------------*/
 
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .footer_container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .footer_contactos{
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+        gap: 3rem;
+    }
+
+    .container_botones{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .botones_footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .botones_footer li {
+        font-size: 1rem;
+    }
+
+    .interlineado_botones_footer ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+        gap: 1.5rem;
+    }
+
+    .container_trabajemosjuntos {
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid #FFF;
+        border-bottom: 1px solid #FFF;
+        padding: 2rem;
+    }
+
+    .container_contactos {
+        height: auto;
+        width: auto;
+    }
+    .derecha_contactos {
+        flex-direction: row;
+        gap: 12rem;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .container_derechosdeautor {
+        gap: 12rem;
+    }
+}
+
+/*-----------------------------------------MEDIA FOOTER-------------------------------------*/
 
 /*-------------------FUENTES--------------------*/
 
 @font-face {
     font-family: "Krub-Regular";
-    src: url("fonts/krub/Krub-Regular.ttf") format(truetype);
+    src: url("fonts/krub/Krub-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Amarante-Regular";
-    src: url("fonts/Amarante-Regular.ttf") format(truetype);
+    src: url("fonts/Amarante-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
