@@ -195,7 +195,7 @@ line-height: normal;
 .subtitulo_hero {
 color: #FFF;
 text-align: center;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1.5rem;
 }
 
@@ -209,7 +209,7 @@ align-items: center;
 .portfolio2024 {
 color: #FFF;
 text-align: center;
-font-family: "Amarante-Regular";
+font-family: Amarante;
 font-size: 2rem;
 }
 
@@ -243,7 +243,7 @@ padding-right: 25rem;
 .subtitulo_hero_sobremi {
 color: #FFF;
 text-align: left;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1rem;
 width: 25rem;
 }
@@ -296,7 +296,7 @@ color: #484848;
 .bsas {
 color: #484848;
 text-align: center;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -342,7 +342,7 @@ width: 40rem;
 }
 
 .titulo_texto_sobremi {
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1.2rem;
 font-style: italic;
 font-weight: 500;
@@ -350,7 +350,7 @@ line-height: normal;
 }
 
 .contenido_texto_sobremi {
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
@@ -467,13 +467,25 @@ gap: 8rem;
 
 @media (max-width: 600px) {
 
+    .titulo_hero {
+        font-size: 4rem;
+    }
+
+    .subtitulo_hero_sobremi {
+        width: auto;
+        font-size: 1rem;
+    }
+
     .gap_pagina_sobremi {
         gap: 5rem;
         padding-bottom: 5rem;
     }
 
     .titulo_container_hero {
-        padding-right: 20vh;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-right: 3rem;
     }
     .datospersonales {
         display: flex;
@@ -495,19 +507,20 @@ gap: 8rem;
     .container_competencias {
         flex-direction: column;
         padding: 0%;
+        border: none;
     }
 
     .container_servicios {
         flex-direction: column;
         gap: 5rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
         align-items: center;
 
     }
 
     .texto_servicios {
-        width: 70vh;
+        width: auto;
         height: auto;
     }
 }
@@ -553,7 +566,7 @@ width: 32rem;
 .subtitulo_hero_contactos {
 color: #FFF;
 text-align: center;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1.5rem;
 width: 32rem;
 }
@@ -603,7 +616,7 @@ list-style: none;
 
 .lista_contactos_formularios {
 color: #FFF;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 0.8rem;
 font-style: normal;
 font-weight: 500;
@@ -703,7 +716,7 @@ box-sizing: border-box;
 .titulo_formularios {
 color: #484848;
 text-align: center;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1.5rem;
 font-style: normal;
 font-weight: 400;
@@ -712,7 +725,7 @@ line-height: normal;
 
 .subtitulos_formularios {
 color: #484848;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 1rem;
 font-style: normal;
 font-weight: 600;
@@ -773,7 +786,7 @@ outline: none;
 
 
 .boton_enviar_formulario {
-    font-family: "Krub-Regular";
+    font-family: krub;
     color: #2C5746;
     text-align: center;
     font-size: 1em;
@@ -905,12 +918,16 @@ height: auto;
 
     .texto_pinturas_izq, .texto_pinturas {
         text-align: start;
-        width: 70vh;
+        width: auto;
     }
 
     .img_pinturas {
         width: 100%;
         height: auto;
+    }
+
+    .titulo_hero_galeria {
+        width: auto;
     }
 
 }
@@ -1335,7 +1352,7 @@ list-style: none;
 
 .lista_contactos {
 color: #FFF;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 0.8rem;
 font-style: normal;
 font-weight: 500;
@@ -1351,7 +1368,7 @@ list-style: none;
 
 .lista_contactos_italica {
 color: #FFF;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 0.8rem;
 font-style: italic;
 font-weight: 400;
@@ -1374,7 +1391,7 @@ background: #1E3F32;
 .texto_derechos {
 color: #FFF;
 text-align: center;
-font-family: "Krub-Regular";
+font-family: Krub;
 font-size: 0.6rem;
 font-style: normal;
 font-weight: 400;
