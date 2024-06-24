@@ -38,5 +38,7 @@ Las imagenes de las paginas "galeria" y "eventos" no estan ajustadas al tamaño 
 
 A modo de conclusión me gustaría decir que si bien estoy muy entusiasmada con el trabajo y con la materia, este segundo bloque del cuatrimestre me costó mucho seguir el ritmo con el que arranque la cursada, no pude dedicarle el tiempo que se merecía a mi pagina web y hay muchas cosas que se que podria mejorar pero por cuestiones de tiempo no pude realizarlas, entre esas cosas esta agregar animaciones o utilizar responsive por ejemplo. 
 
+###.RECUPERATORIO 
 
+Realice todas las paginas de mi sitio web en formato responsive, para una resolución de 600px, ademas corregí errores en las fuentes utilizadas e incluí una animacion sencilla en los heros de mis paginas.
 
