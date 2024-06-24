@@ -109,7 +109,10 @@ border-radius: 2rem;
 /*-------------------HEADER QUERIES--------------------*/
 
 
-@container header (min-width:610px) {
+@media (min-width:610px) {
+    .header {
+        height: auto;
+    }
     .header_nav {
         display: block;
         position: static;
@@ -135,6 +138,10 @@ border-radius: 2rem;
         align-items: center;
         background-color: none;
         ;
+    }
+
+    .header_nav:checked {
+        height: auto;
     }
 
 
@@ -1044,6 +1051,27 @@ font-style: italic;
 font-weight: 500;
 line-height: normal;
 }
+
+/*---------------------------RESPONSIVE PROYECTOS---------------------------*/
+
+@media (max-width: 600px) {
+    .titulo_hero_proyectos {
+        width: auto;
+    }
+
+    .container_galeria_proyectos {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/*---------------------------RESPONSIVE PROYECTOS---------------------------*/
+
+
 /*-----------------------------------------PAGINA DE EVENTOS-------------------------------------*/
 
 .hero_container_eventos {
@@ -1147,7 +1175,15 @@ width: 32rem;
 
 @media (max-width: 600px) {
 
-    
+    .titulo_hero_contactos {
+        width: auto;
+        padding: 2rem;
+    }
+    .subtitulo_hero_contactos {
+        width: auto;
+        font-size: 1rem;
+        padding: 2rem;
+    }
 
     .container_formulario {
         flex-direction: column;
@@ -1171,6 +1207,13 @@ width: 32rem;
 
     .gap_eventos{ 
         padding-bottom: 5rem;
+    }
+
+    .selecciona {
+        gap:2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
     }
 
 }
