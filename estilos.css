@@ -47,9 +47,8 @@ background-color: #1E3F32;
 position: absolute;
 height: 100vh;
 width: 100vw;
-justify-content: center; /* Centrar contenido horizontalmente */
-align-items: center; /* Centrar contenido verticalmente */
-
+justify-content: center;
+align-items: center;
 top: 0;
 z-index: -1;
 }
